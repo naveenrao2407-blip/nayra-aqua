@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAYRA AQUA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+      color: #eee;
+    }
+
+    header {
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 25px;
+      border-bottom: 1px solid rgba(212,175,55,0.3);
+    }
+
+    header h1 {
+      color: #d4af37;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #111;
+      border-bottom: 1px solid rgba(212,175,55,0.2);
+    }
+
+    nav a {
+      color: #ccc;
+      padding: 12px 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    section {
+      margin: 25px;
+      padding: 30px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+
+    h2 {
+      color: #d4af37;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid rgba(212,175,55,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(212,175,55,0.3);
+    }
+
+    button {
+      background: transparent;
+      color: #d4af37;
+      border: 1px solid #d4af37;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #d4af37;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid rgba(212,175,55,0.2);
+      margin-top: 20px;
+    }
+
+    a {
+      color: #d4af37;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>NAYRA AQUA</h1>
+  <p>Pure Water • Premium Quality</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#details">Details</a>
+  <a href="#products">Availability</a>
+  <a href="#orders">Orders</a>
+  <a href="#contact">Contact</a>
+  <a href="#support">Support</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Experience premium quality drinking water with NAYRA AQUA.</p>
+</section>
+
+<section id="details">
+  <h2>About Us</h2>
+  <p>We provide safe, clean and customized water solutions.</p>
+  <p><strong>Mobile:</strong> 9001475022, 9216439543</p>
+  <p><strong>Special:</strong> Customized Water Bottles Available</p>
+</section>
+
+<section id="products">
+  <h2>Availability</h2>
+  <div class="products">
+    <div class="card">
+      <h3>20L Water Can</h3>
+      <p>In Stock</p>
+      <button onclick="order('20L Water Can')">Order</button>
+    </div>
+
+    <div class="card">
+      <h3>1L Bottle</h3>
+      <p>Available</p>
+      <button onclick="order('1L Bottle')">Order</button>
+    </div>
+
+    <div class="card">
+      <h3>Customized Bottles</h3>
+      <p>On Demand</p>
+      <button onclick="order('Customized Bottles')">Order</button>
+    </div>
+  </div>
+</section>
+
+<section id="orders">
+  <h2>Place Order</h2>
+  <button onclick="whatsappOrder()">Order on WhatsApp</button>
+  <br><br>
+  <button onclick="callNow()">Call Now</button>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Phone: 9001475022 / 9216439543</p>
+  <p><a href="https://wa.me/919001475022" target="_blank">Chat on WhatsApp</a></p>
+</section>
+
+<section id="support">
+  <h2>Support</h2>
+  <p>Email: nayrraquabusiness@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 NAYRA AQUA</p>
+</footer>
+
+<script>
+  function order(product) {
+    let msg = "Hello NAYRA AQUA, I want to order: " + product;
+    window.open("https://wa.me/919001475022?text=" + encodeURIComponent(msg));
+  }
+
+  function whatsappOrder() {
+    window.open("https://wa.me/919001475022");
+  }
+
+  function callNow() {
+    window.location.href = "tel:9001475022";
+  }
+</script>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
